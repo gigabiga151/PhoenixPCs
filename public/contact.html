@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08060d" />
+  <title>Contact Phoenix PCs | Build help & order support</title>
+  <meta name="description" content="Questions about a custom gaming PC, an order or your warranty? Message the Phoenix PCs team. We reply within one business day." />
+  <link rel="canonical" href="https://dancing-banoffee-8d6137.netlify.app/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Phoenix PCs" />
+  <meta property="og:title" content="Contact Phoenix PCs | Build help & order support" />
+  <meta property="og:description" content="Questions about a custom gaming PC, an order or your warranty? Message the Phoenix PCs team. We reply within one business day." />
+  <meta property="og:url" content="https://dancing-banoffee-8d6137.netlify.app/contact" />
+  <meta property="og:image" content="https://dancing-banoffee-8d6137.netlify.app/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="subpage">
+  <header class="nav">
+    <a class="brand" href="/"><img class="logo" src="/logo.png" alt="Phoenix PCs logo" width="843" height="473" /> PHOENIX<span>PCs</span></a>
+    <nav>
+      <a href="/#configure">Configure</a>
+      <a href="/#prebuilts">Prebuilts</a>
+      <a href="/contact">Contact</a>
+      <a class="cart-btn" href="/">← Back to store</a>
+    </nav>
+  </header>
+  <main class="doc">
+    <p class="eyebrow">Support</p>
+    <h1>Talk to a builder</h1>
+    <p class="lead">Not sure which parts to choose, need an update on your order, or having trouble with your PC? Send us a message and a real Phoenix builder will reply by email within one business day (Monday to Friday).</p>
+    <div class="contact-grid">
+      <form name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="subject" value="New message from Phoenix PCs website (%{submissionId})" />
+        <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <label>Name<input name="name" required maxlength="120" autocomplete="name" /></label>
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Order reference <span class="muted">(optional)</span><input name="order_ref" maxlength="12" placeholder="e.g. 3F9A1C2B" /></label>
+        <label>Topic
+          <select name="topic">
+            <option>Help choosing a build</option>
+            <option>Order status</option>
+            <option>Shipping</option>
+            <option>Returns &amp; refunds</option>
+            <option>Warranty / tech support</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="6" required maxlength="5000"></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+      <aside class="contact-side">
+        <div class="info-card"><h3>Response time</h3><p>Within 1 business day, Monday to Friday.</p></div>
+        <div class="info-card"><h3>Already ordered?</h3><p>Check progress anytime with your order reference on the <a href="/#track">order tracker</a>.</p></div>
+        <div class="info-card"><h3>Quick answers</h3><p>Shipping times, payments and upgrades are covered in our <a href="/faq">FAQ</a>.</p></div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/"><img class="logo" src="/logo.png" alt="" width="843" height="473" /> PHOENIX<span>PCs</span></a>
+        <p class="muted">Hand-built, 48-hour stress-tested gaming and creator PCs, shipped across the US.</p>
+        <p class="pay-note">Secure payments by Stripe · Visa · Mastercard · Amex · Discover · Google Pay · Apple Pay</p>
+      </div>
+      <nav aria-label="Shop">
+        <h4>Shop</h4>
+        <a href="/#configure">Custom builder</a>
+        <a href="/#prebuilts">Prebuilt rigs</a>
+        <a href="/#track">Track an order</a>
+      </nav>
+      <nav aria-label="Support">
+        <h4>Support</h4>
+        <a href="/contact">Contact us</a>
+        <a href="/faq">FAQ</a>
+        <a href="/shipping">Shipping</a>
+        <a href="/returns">Returns &amp; refunds</a>
+        <a href="/warranty">Warranty</a>
+      </nav>
+      <nav aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="/terms">Terms of sale</a>
+        <a href="/privacy">Privacy policy</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="js-year">2026</span> Phoenix PCs. All rights reserved.</span>
+      <span class="muted">Built to burn bright.</span>
+    </div>
+  </footer>
+  <script>document.querySelectorAll(".js-year").forEach((e) => (e.textContent = new Date().getFullYear()));</script>
+</body>
+</html>

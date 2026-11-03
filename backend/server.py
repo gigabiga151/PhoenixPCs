@@ -192,7 +192,7 @@ class Order(BaseModel):
 import stripe
 from fastapi import Request
 
-stripe.api_key = os.environ.get("STRIPE_SECRET_KEY") or "sk_test_emergent"
+stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
 STRIPE_WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
 DEPOSIT_AMOUNT = 250.00  # fixed build deposit, server-side only
 

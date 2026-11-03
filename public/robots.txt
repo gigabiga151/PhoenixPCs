@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /api/
+Disallow: /thank-you
+
+Sitemap: https://dancing-banoffee-8d6137.netlify.app/sitemap.xml
