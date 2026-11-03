@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08060d" />
+  <title>Phoenix PCs | Custom Gaming PCs, Hand-Built &amp; Stress-Tested</title>
+  <meta name="description" content="Configure a custom gaming PC or buy a ready-to-ship prebuilt. Every Phoenix PC is hand-built, 48-hour stress-tested, covered by a 3-year warranty and shipped free." />
+  <link rel="canonical" href="https://dancing-banoffee-8d6137.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Phoenix PCs" />
+  <meta property="og:title" content="Phoenix PCs | Custom Gaming PCs" />
+  <meta property="og:description" content="Hand-built, 48-hour stress-tested gaming and creator PCs with a 3-year warranty and free shipping." />
+  <meta property="og:url" content="https://dancing-banoffee-8d6137.netlify.app/" />
+  <meta property="og:image" content="https://dancing-banoffee-8d6137.netlify.app/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Phoenix PCs","url":"https://dancing-banoffee-8d6137.netlify.app/","logo":"https://dancing-banoffee-8d6137.netlify.app/logo.png","image":"https://dancing-banoffee-8d6137.netlify.app/og-image.jpg","description":"Custom gaming and creator PCs, hand-built and 48-hour stress-tested.","priceRange":"$999 - $5,499","currenciesAccepted":"USD","paymentAccepted":"Credit card, Debit card, Google Pay, Apple Pay","areaServed":"US"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><img class="logo" src="/logo.png" alt="Phoenix PCs logo" width="843" height="473" /> PHOENIX<span>PCs</span></a>
+    <nav>
+      <a href="#configure">Configure</a>
+      <a href="#prebuilts">Prebuilts</a>
+      <a href="#track">Track order</a>
+      <a href="/contact">Contact</a>
+      <button class="cart-btn" id="cart-open" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.6 3H21l-2 8H7.4L4.4 2H1v2h3.4l2.4 11.4A2 2 0 0 0 8.8 17H19v-2H8.8l-.2-1H19.6L22.5 5H6.2L5.8 4Z"/></svg>
+        Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">Hand-built · Stress-tested · Shipped in 7 days</p>
+      <h1>Rise above<br /><em>every frame.</em></h1>
+      <p class="lede">Custom gaming and creator PCs, assembled by hand and burned in for 48 hours before they leave our bench.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#configure">Build yours</a>
+        <a class="btn ghost" href="#prebuilts">Shop ready-to-ship</a>
+      </div>
+      <ul class="stats">
+        <li><strong>48h</strong>stress test</li>
+        <li><strong>3 yr</strong>warranty</li>
+        <li><strong>4.9★</strong>customer rating</li>
+      </ul>
+    </section>
+
+    <section id="configure" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Step 1</p>
+        <h2>Pick your platform</h2>
+      </div>
+      <div id="models" class="models"><p class="muted">Loading catalog…</p></div>
+
+      <div id="builder" class="builder" hidden>
+        <div class="builder-parts">
+          <div class="section-head"><p class="eyebrow">Step 2</p><h2>Tune every part</h2></div>
+          <p class="intro">Every Phoenix starts with a hand-picked set of parts that work well together. Swap anything you like:
+            prices update as you go, and each upgrade is checked for compatibility, power and thermals before we build it.
+            Not sure what to pick? Leave the defaults, or tell us what you play in the notes and a builder will recommend changes.</p>
+          <ul class="perks">
+            <li><strong>48-hour burn-in</strong><span>Every rig is stress-tested on CPU, GPU and memory before it ships.</span></li>
+            <li><strong>3-year warranty</strong><span>Parts and labour, with lifetime US-based tech support.</span></li>
+            <li><strong>Ships in 7 days</strong><span>Insured, foam-packed, with a free shipping lock on the GPU.</span></li>
+          </ul>
+          <div id="slots"></div>
+        </div>
+        <aside class="summary">
+          <div class="sum-media">
+            <img id="sum-img" src="/images/builder-hero.webp" alt="RGB LED gaming PC" width="1100" height="684" />
+            <span class="sum-tier" id="sum-tier"></span>
+          </div>
+          <h3 id="sum-name">Your Phoenix build</h3>
+          <p class="sum-desc" id="sum-desc"></p>
+          <div class="sum-perf" id="sum-perf"></div>
+          <ul id="sum-list"></ul>
+          <ul class="included">
+            <li>Windows 11 Home installed and updated</li>
+            <li>Pre-tuned ARGB lighting profiles</li>
+            <li>Hand-done cable management</li>
+            <li>Free 2-day insured shipping</li>
+          </ul>
+          <div class="total"><span>Total</span><strong id="sum-total"></strong></div>
+          <p class="monthly" id="sum-monthly"></p>
+          <button class="btn primary block" id="add-custom">Add to cart</button>
+          <p class="fine">Secure card checkout · Google Pay & Apple Pay accepted</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="prebuilts" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Ready to ship</p>
+        <h2>Prebuilt rigs</h2>
+      </div>
+      <div id="prebuilt-grid" class="grid"></div>
+    </section>
+
+    <section id="track" class="section track">
+      <div class="section-head">
+        <p class="eyebrow">Already ordered?</p>
+        <h2>Track your build</h2>
+      </div>
+      <form id="track-form" class="track-form">
+        <input name="ref" placeholder="Order ref (e.g. 3F9A1C2B)" required minlength="8" maxlength="8" />
+        <input name="email" type="email" placeholder="Email used for the order" required />
+        <button class="btn primary" type="submit">Track</button>
+      </form>
+      <div id="track-result"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/"><img class="logo" src="/logo.png" alt="" width="843" height="473" /> PHOENIX<span>PCs</span></a>
+        <p class="muted">Hand-built, 48-hour stress-tested gaming and creator PCs, shipped across the US.</p>
+        <p class="pay-note">Secure payments by Stripe · Visa · Mastercard · Amex · Discover · Google Pay · Apple Pay</p>
+      </div>
+      <nav aria-label="Shop">
+        <h4>Shop</h4>
+        <a href="/#configure">Custom builder</a>
+        <a href="/#prebuilts">Prebuilt rigs</a>
+        <a href="/#track">Track an order</a>
+      </nav>
+      <nav aria-label="Support">
+        <h4>Support</h4>
+        <a href="/contact">Contact us</a>
+        <a href="/faq">FAQ</a>
+        <a href="/shipping">Shipping</a>
+        <a href="/returns">Returns &amp; refunds</a>
+        <a href="/warranty">Warranty</a>
+      </nav>
+      <nav aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="/terms">Terms of sale</a>
+        <a href="/privacy">Privacy policy</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="js-year">2026</span> Phoenix PCs. All rights reserved.</span>
+      <span class="muted">Built to burn bright.</span>
+    </div>
+  </footer>
+
+  <dialog id="cart" class="drawer" aria-label="Your cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close" id="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div class="drawer-body">
+      <ul id="cart-items" class="cart-items"></ul>
+      <div id="cart-empty" class="cart-empty">
+        <p>Your cart is empty.</p>
+        <a class="btn ghost" href="#prebuilts" id="cart-shop">Browse builds</a>
+      </div>
+      <form id="checkout-form" class="checkout-form">
+        <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0</strong></div>
+        <p class="fine left">Free insured 2-day shipping · 30-day returns · 3-year warranty</p>
+        <h4>Your details</h4>
+        <label>Full name<input name="customer_name" required maxlength="120" autocomplete="name" /></label>
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Phone <span class="muted">(optional)</span><input name="phone" maxlength="40" autocomplete="tel" /></label>
+        <label>Build notes <span class="muted">(optional)</span><textarea name="notes" rows="2" maxlength="2000" placeholder="Games you play, RGB colour preferences…"></textarea></label>
+        <p class="error" id="checkout-error"></p>
+        <button class="btn primary block" id="checkout-btn" type="submit">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H5v14h14V9h-2V6a5 5 0 0 0-5-5Zm-3 5a3 3 0 1 1 6 0v3H9V6Z"/></svg>
+          Checkout securely
+        </button>
+        <p class="fine">You'll enter your credit or debit card on Stripe's encrypted payment page. We never see or store your card number.</p>
+        <p class="fine">By checking out you agree to our <a href="/terms" target="_blank">Terms of sale</a>, <a href="/returns" target="_blank">Returns policy</a> and <a href="/privacy" target="_blank">Privacy policy</a>.</p>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog id="confirm-dialog">
+    <div id="confirm-body"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
